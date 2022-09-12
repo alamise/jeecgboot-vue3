@@ -101,6 +101,7 @@ export function doLogout() {
 
 export function getCodeInfo(currdatetime) {
   let url = Api.getInputCode + `/${currdatetime}`;
+  console.log('debug getCodeInfo', url);
   return defHttp.get({ url: url });
 }
 /**
